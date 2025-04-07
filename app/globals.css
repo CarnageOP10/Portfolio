@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 100%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 84 100% 50%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-dark text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    letter-spacing: -0.011em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    letter-spacing: -0.025em;
+    font-weight: 800;
+  }
+
+  /* Cyberpunk-inspired scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #c5ff00, #a3ff00);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #a3ff00, #c5ff00);
+  }
+}
+
+/* Spotify-inspired animations and components */
+@layer components {
+  /* Card hover effects */
+  .spotify-card {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .spotify-card:hover {
+    @apply transform scale-[1.02] shadow-xl;
+    box-shadow: 0 10px 30px -10px rgba(197, 255, 0, 0.2);
+  }
+
+  /* Button hover effects */
+  .spotify-button {
+    @apply transition-all duration-200 ease-out;
+  }
+
+  .spotify-button:hover {
+    @apply transform scale-105;
+  }
+
+  /* Gradient animation */
+  .animated-gradient {
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease infinite;
+  }
+
+  @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /* Spotify-like progress bar */
+  .progress-bar {
+    @apply h-1 bg-dark-lighter rounded-full overflow-hidden;
+  }
+
+  .progress-bar-fill {
+    @apply h-full bg-gradient-to-r from-neon-green to-neon-yellow;
+    transition: width 0.5s ease-out;
+  }
+
+  /* Spotify-like hover overlay */
+  .spotify-overlay {
+    @apply absolute inset-0 bg-black/0 flex items-center justify-center opacity-0 transition-all duration-300 ease-out;
+  }
+
+  .spotify-card:hover .spotify-overlay {
+    @apply bg-black/60 opacity-100;
+  }
+
+  /* Spotify-like text truncation */
+  .text-truncate {
+    @apply overflow-hidden whitespace-nowrap text-ellipsis;
+  }
+
+  /* Spotify-like pill */
+  .spotify-pill {
+    @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-medium transition-all duration-300;
+  }
+
+  /* Spotify-like icon button */
+  .spotify-icon-button {
+    @apply flex items-center justify-center rounded-full bg-black/20 backdrop-blur-sm transition-all duration-300 ease-out;
+  }
+
+  .spotify-icon-button:hover {
+    @apply transform scale-110 bg-neon-green text-dark;
+  }
+
+  /* Neon text effect */
+  .neon-text {
+    text-shadow: 0 0 5px rgba(197, 255, 0, 0.5), 0 0 10px rgba(197, 255, 0, 0.3);
+  }
+
+  /* Bold display text */
+  .display-text {
+    @apply font-black uppercase tracking-tighter;
+    line-height: 0.9;
+  }
+}
+
