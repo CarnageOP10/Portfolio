@@ -69,7 +69,7 @@ export default function Projects() {
       category: ["agi", "ml", "gi"],
       tags: ["AI agents", "Langchain", "RAGs", "AutoGen", "CrewAI"],
       github: "https://github.com/CarnageOP10/AutoScholar",
-      progress: 20,
+      progress: 100,
     },
   ]
 
