@@ -52,6 +52,17 @@ export default function Projects() {
     },
     {
       id: 3,
+      title: "Marvin",
+      description:
+        "Disaster Response Voice Assistant using AST, Whisper, LLM of choice and SpeechT5 along with agentic capabilities",
+      image: "/marvin.png?height=300&width=600",
+      category: ["ml", "gi","nlp", "agi"],
+      tags: ["Speech-to-Text", "Text-to_Speech", "Whisper", "SpeechT5", "AST"],
+      github: "https://github.com/CarnageOP10/Marvin",
+      progress: 50,
+    },
+    {
+      id: 4,
       title: "AutoMate",
       description:
         "An AI-powered customer support platform leveraging NLP via Llama-3.1, Tableau and PostgreSQL for enhanced insights",
@@ -62,7 +73,7 @@ export default function Projects() {
       progress: 100,
     },
     {
-      id: 4,
+      id: 5,
       title: "Auto-Scholar",
       description: "An AI-powered multi-agent research team that autonomously retrieves, analyzes, and synthesizes academic papers into actionable insights using CrewAI, AutoGen, and RAG.",
       image: "/autoscholar.png?height=300&width=600",
