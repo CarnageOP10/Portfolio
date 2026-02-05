@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import AboutMe from "@/components/about-me"
+import Experience from "@/components/experience"
 import Achievements from "@/components/achievements"
 import Certifications from "@/components/certifications"
 import Footer from "@/components/footer"
@@ -41,6 +42,7 @@ export default function Home() {
           <Header />
           <main className="container mx-auto px-4 pb-20">
             <AboutMe />
+            <Experience />
             <Projects />
             <Achievements />
             <Certifications />

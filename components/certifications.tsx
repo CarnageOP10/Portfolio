@@ -217,7 +217,7 @@ export default function Certifications() {
               <motion.div whileHover={{ x: 5 }} className="transition-all duration-200">
                 <div className="font-medium">BTech. in Electronics and Communication with specialization in IoT</div>
                 <div className="text-gray-400 text-sm">Indian Institute of Information Technology, Nagpur, 2022-2026(Expected)</div>
-                <div className="text-gray-400 text-sm">CGPA : 9.1</div>
+                <div className="text-gray-400 text-sm">CGPA : 9.28</div>
               </motion.div>
               <motion.div whileHover={{ x: 5 }} className="transition-all duration-200">
                 <div className="font-medium">Class 12th CBSE</div>

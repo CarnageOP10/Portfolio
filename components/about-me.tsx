@@ -9,7 +9,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export default function AboutMe() {
   const [typedText, setTypedText] = useState("")
-  const fullText = "AI Researcher & Machine Learning Engineer"
+  const fullText = "Applied AI ML Researcher and Engineer"
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
 

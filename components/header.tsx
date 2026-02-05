@@ -29,7 +29,7 @@ export default function Header() {
       setIsScrolled(window.scrollY > 10)
 
       // Update active section based on scroll position
-      const sections = ["about", "projects", "achievements", "Education"]
+      const sections = ["about", "experience", "projects", "achievements", "Education"]
       const currentSection = sections.find((section) => {
         const element = document.getElementById(section)
         if (element) {
@@ -60,6 +60,7 @@ export default function Header() {
 
   const navLinks = [
     { name: "About", href: "#about", id: "about" },
+    { name: "Experience", href: "#experience", id: "experience" },
     { name: "Projects", href: "#projects", id: "projects" },
     { name: "Achievements", href: "#achievements", id: "achievements" },
     { name: "Education", href: "#Education", id: "Education" },
